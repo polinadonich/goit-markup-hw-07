@@ -566,59 +566,77 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-black" data-modal-close>
-          <span class="bgr-close-black">
-            <svg class="close-icon" width="18" height="18">
+        <button class="modal__btn-close" data-modal-close>
+          <span class="modal__btn-close_bgr">
+            <svg class="modal__btn-close_icon" width="18" height="18">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </span>
         </button>
 
-        <div class="modal-content">
-          <div class="modal-header">
+        <div class="modal__content">
+          <div class="modal__header">
             Оставьте свои данные, мы вам перезвоним
           </div>
 
           <div class="modal-form-wrapper">
             <form class="modal-form">
               <label>
-                <span class="label-text">Имя</span>
+                <span class="modal-form__label-text">Имя</span>
                 <span class="modal-input-wrapper">
-                  <input type="text" name="name" class="input-decoration" />
-                  <svg class="modal-input-icon" width="18" height="18">
+                  <input
+                    type="text"
+                    name="name"
+                    class="modal-input-wrapper__text"
+                  />
+                  <svg class="modal-input-wrapper__icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-person"></use>
                   </svg>
                 </span>
               </label>
               <label>
-                <span class="label-text">Телефон</span>
+                <span class="modal-form__label-text">Телефон</span>
                 <span class="modal-input-wrapper">
-                  <input type="text" name="phone" class="input-decoration" />
-                  <svg class="modal-input-icon" width="18" height="18">
+                  <input
+                    type="text"
+                    name="phone"
+                    class="modal-input-wrapper__text"
+                  />
+                  <svg class="modal-input-wrapper__icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                 </span>
               </label>
               <label>
-                <span class="label-text">Почта</span>
+                <span class="modal-form__label-text">Почта</span>
                 <span class="modal-input-wrapper">
-                  <input type="text" name="mail" class="input-decoration" />
-                  <svg class="modal-input-icon" width="18" height="18">
+                  <input
+                    type="text"
+                    name="mail"
+                    class="modal-input-wrapper__text"
+                  />
+                  <svg class="modal-input-wrapper__icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-email"></use>
                   </svg>
                 </span>
               </label>
               <label>
-                <span class="label-text">Комментарий</span>
+                <span class="modal-form__label-text">Комментарий</span>
                 <textarea
                   name="comment"
-                  class="input-decoration"
+                  class="modal-input-wrapper__text"
                   placeholder="Введите текст"
                 ></textarea>
               </label>
 
-              <label class="policy-label">
-                <input type="checkbox" name="policy-agree" class="checkbox" />
+              <!-- CHECKBOX -->
+
+              <label class="checkbox">
+                <input
+                  type="checkbox"
+                  name="policy-agree"
+                  class="checkbox__hidden"
+                />
                 <span class="policy-icon">
                   <svg class="icon-check" width="16" height="15">
                     <use href="./images/icons.svg#icon-check"></use>

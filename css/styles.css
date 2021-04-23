@@ -689,7 +689,8 @@ img {
   margin-left: 10px;
   fill: #fff;
 }
-/* Модальное окно */
+/* MODAL */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -728,7 +729,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-black {
+.modal__btn-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -740,7 +741,7 @@ img {
   border: none;
 }
 
-.bgr-close-black {
+.modal__btn-close_bgr {
   position: relative;
   margin-top: 8px;
   margin-right: 8px;
@@ -751,7 +752,7 @@ img {
   background-color: var(--primery-bg-color);
 }
 
-.close-icon {
+.modal__btn-close_icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -759,16 +760,16 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-icon:hover,
-.close-icon:focus {
+.modal__btn-close_icon:hover,
+.modal__btn-close_icon:focus {
   fill: var(--accept-color);
 }
 
-.modal-content {
+.modal__content {
   padding: 40px;
 }
 
-.modal-header {
+.modal__header {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -783,11 +784,11 @@ img {
   flex-direction: column;
 }
 
-.label-text {
+.modal-form__label-text {
   color: var(--title-text-color);
 }
 
-.input-decoration {
+.modal-input-wrapper__text {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 100%;
@@ -804,7 +805,7 @@ img {
   position: relative;
 }
 
-.modal-form .input-decoration:focus,
+.modal-form .modal-input-wrapper__text:focus,
 .modal-form textarea:focus {
   outline: none;
   border: 1px solid var(--accept-color);
@@ -816,14 +817,14 @@ img {
   resize: none;
 }
 
-.modal-input-icon {
+.modal-input-wrapper__icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
 }
 
-.modal-form .input-decoration:focus + .modal-input-icon {
+.modal-form .modal-input-wrapper__text:focus + .modal-input-wrapper__icon {
   fill: var(--accept-color);
 }
 
@@ -836,7 +837,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.checkbox {
+.checkbox__hidden {
   position: absolute;
   width: 1px;
   height: 1px;
