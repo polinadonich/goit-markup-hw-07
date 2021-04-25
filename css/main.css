@@ -50,7 +50,7 @@ img {
   align-items: center;
 }
 
-.site-header .site-header__nav {
+.site-header__nav {
   display: flex;
   align-items: center;
 }
@@ -99,7 +99,7 @@ img {
   color: #2196f3;
 }
 
-.site-nav .site-nav__link-is-active::after {
+.site-nav__link-is-active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -271,7 +271,6 @@ img {
   bottom: 0;
 }
 
-/*  TEAM */
 .section-team {
   background-color: #f5f4fa;
 }
@@ -330,7 +329,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-network .social-network__link {
+.social-network__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -351,7 +350,6 @@ img {
   background-color: #2196f3;
 }
 
-/* CLIENTS */
 .clients {
   display: flex;
   margin: 0 auto;
@@ -385,15 +383,11 @@ img {
   border: 1px solid #2196f3;
 }
 
-/* PORTFOLIO-NAVIGATION */
-.portfolio-nav .portfolio-nav__button {
-  background-color: #f5f4fa;
-  color: #212121;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+.portfolio-nav {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
 }
 
 .portfolio-nav__button {
@@ -413,27 +407,29 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-nav .portfolio-nav__button:hover,
-.portfolio-nav .portfolio-nav__button:focus {
+.portfolio-nav__item {
+  margin-left: 8px;
+}
+
+.portfolio-nav__item:first-child {
+  margin-left: 0px;
+}
+
+.portfolio-nav .portfolio-nav__button {
+  background-color: #f5f4fa;
+  color: #212121;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-nav .portfolio-nav__button:hover, .portfolio-nav .portfolio-nav__button:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-}
-
-.portfolio-nav {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
-}
-
-.portfolio-nav .portfolio-nav__item {
-  margin-left: 8px;
-}
-
-.portfolio-nav .portfolio-nav__item:first-child {
-  margin-left: 0px;
 }
 
 /* PORTFOLIO */
