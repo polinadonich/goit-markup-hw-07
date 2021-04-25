@@ -1,0 +1,14 @@
+.site-header {
+  border-bottom: 1px solid #ececec;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & .site-header__nav {
+    display: flex;
+    align-items: center;
+  }
+}
