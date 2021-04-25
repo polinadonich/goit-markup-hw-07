@@ -1,25 +1,7 @@
-$primery-text-color: #212121;
-$title-text-color: #757575;
-$accept-color: #2196f3;
-$primery-bg-color: #ffffff;
-$accept-bg-color: #2f303a;
-$bg-color: #f5f4fa;
-$portfolio-box-gap: 30px;
-$border-card-content: 1px solid #eeeeee;
-$color-icon: #afb1b8;
-
-.page {
-  background-color: $primery-bg-color;
-  font-family: Roboto, sans-serif;
-}
+@import "./utils/variables";
+@import "./base/base";
 
 /* SITE-NAV */
-
-.container {
-  width: 1200px;
-  padding: 0px 15px;
-  margin: auto;
-}
 
 .site-header {
   border-bottom: 1px solid #ececec;
@@ -50,20 +32,6 @@ $color-icon: #afb1b8;
 
 .logo__text {
   color: $primery-text-color;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 .site-nav {
