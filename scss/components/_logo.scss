@@ -13,4 +13,11 @@
   &__text {
     color: $primery-text-color;
   }
+
+  &__text_white {
+    color: $primery-bg-color;
+    letter-spacing: 0.03em;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
